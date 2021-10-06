@@ -11,5 +11,9 @@ do
  echo "$counter";
 done
 
-echo $number;
-echo "invalied"; 
+if [ $number -gt 20 ]
+then
+ echo "invalid";
+else
+ echo "valid"
+fi
