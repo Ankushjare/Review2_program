@@ -1,23 +1,15 @@
 #!/bin/bash
+  
+echo "write a number between 10 to 20"
+  
+read number;
 
-echo "enter number"
-read num
-
-for((i=2; i<=num/2; i++))
+ echo "you entered $number";
+   
+for((counter=$number; counter>=1; counter--))
 do
-  if [ $((num%i)) -eq 0 ]
-  then
-    echo "$num is not a prime number."
-    exit
-  fi
+ echo "$counter";
 done
-echo "$num is a prime number."
 
-
-value=$(($num%2))
-if [ $value -eq 1 ]
-then
- echo "odd";
-else
- echo "even"
-fi
+echo $number;
+echo "invalied"; 
