@@ -10,3 +10,6 @@ for((counter=$number; counter>=1; counter--))
 do
  echo "$counter";
 done
+
+echo $number;
+echo "invalied"; 
